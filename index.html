@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра в жизнь Конвея</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Игра в жизнь Конвея</h1>
+        
+        <div class="controls">
+            <div class="size-controls">
+                <label for="grid-size">Размер поля:</label>
+                <input type="number" id="grid-size" value="20" min="5" max="100">
+                <button id="apply-size">Применить</button>
+            </div>
+            
+            <div class="speed-controls">
+                <label for="speed">Скорость (мс):</label>
+                <input type="range" id="speed" min="50" max="1000" value="200">
+                <span id="speed-value">200</span>
+            </div>
+            
+            <div class="buttons">
+                <button id="start">Старт</button>
+                <button id="pause">Пауза</button>
+                <button id="step">Шаг вперёд</button>
+                <button id="reset">Сброс</button>
+            </div>
+        </div>
+        
+        <div class="grid-container">
+            <canvas id="game-grid"></canvas>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
